@@ -1,11 +1,12 @@
 body{
     margin: 0 auto;
     width: 100%;
+    font-family: PT Sans;
     #header{
         background-color: #dcdcdc;
         .background1{
             margin: 0 auto;
-            width: 1000px;
+            width: 980px;
             height: 230px;
             padding: 28px 0 28px 0;
             .company{
@@ -17,6 +18,7 @@ body{
                 float: right;
                 font-size: 40px;
                 color: rgb(118, 118, 118);
+                font-family: PT Sans;
                 .reverse{
                     width: 191px;
                     color: rgb(118, 118, 118);
@@ -32,7 +34,7 @@ body{
         background-color: rgb(119, 119, 119);
         .background2{
             margin: 0 auto;
-            width: 1000px;
+            width: 980px;
             height: 80px;
             text-align: center;
             padding-top: 19px;
@@ -47,6 +49,104 @@ body{
             }
             .a1{
                border-right: 0; 
+            }
+        }
+    }
+    #slider{
+        height: 400px;
+        background-image: url(img/slide1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        .btns{
+            width: 980px;
+            margin: 0 auto;
+            .arrow_left{
+                height: 61px;
+                width: 34px;
+                background-image: url(img/arrow1.png);
+                border: 0;
+                margin-top: 160px;
+                float: left;
+            }
+            .arrow_right{
+                height: 61px;
+                width: 34px;
+                background-image: url(img/arrow2.png);
+                border: 0;
+                margin-top: 160px;
+                float: right;
+            }
+        }
+    }
+    #content{
+        width: 980px;
+        margin: 0 auto;
+        margin-top: 10px;
+        .domestic{
+            color: rgb(141, 141, 141); 
+            a{
+                color: rgb(141, 141, 141);
+                font-family: PT Sans;
+                font-size: 15px;
+                margin-left: 5px;
+                padding-right: 5px;
+            }
+        }
+        .content1{
+            margin-top: 30px;
+            .ul1{
+                color: rgb(141, 141, 141);
+                font-size: 20px;
+                list-style: none;
+                padding-left: 0;
+                margin-left: 5px;
+                float: left;
+                a{
+                   color: rgb(141, 141, 141); 
+                }
+                .cars{
+                   color: rgb(141, 141, 141); 
+                    a{
+                       color: rgb(141, 141, 141); 
+                        font-size: 15px;
+                    }
+                    a:hover{
+                        color: black;
+                    }
+                }
+            }
+            .submenu {
+                width: 185px;
+            }
+            .left1{
+                width: 795px;
+                //margin-left: 50px;
+                margin-top: 10px;
+                float: left;
+                .back_grey{
+                    height: 377px;
+                    width: 250px;
+                    background-color: rgb(220, 220, 220);
+                    padding: 20px;
+                    margin-left: 15px;
+                    margin-bottom: 15px;
+                    float: left;
+                    .buy{
+                        height: 90px;
+                        font-size: 18px;
+                        color: rgb(141, 141, 141);
+                        margin-top: 15px;
+                    }
+                    .many{
+                        font-size: 28px;
+                        float: left;
+                    }
+                    .mini{
+                        margin: 10px;
+
+                        float: right;
+                    }
+                }
             }
         }
     }

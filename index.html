@@ -2,20 +2,29 @@
 <html lang="en"> 
 <head> 
     <meta charset="UTF-8"> 
-    <title>OXXO</title>
+    <title>Pixel</title>
     <link rel="stylesheet/less" type="text/css" href="pixelplus.less">
     <!--<link rel="stylesheet" type="text/css" href="pixelplus.css">-->
     <script src="less.min.js" type="text/javascript"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <script>
+        function sequense_left(){
+            document.getElementById("slider").style.backgroundImage = "url(img/slide1.jpg)"; 
+            
+        }
+        function sequense_right(){
+            document.getElementById("slider").style.backgroundImage = "url(img/slide2.jpg)"; 
+        }
+    </script>
 </head> 
 <body>
 <div id = "header">
     <div class = "background1">
         <img src = "img/name_company.png" class = "company">
         <div class = "com">
-            +7(499) 777-77-77</br>
-            +7(499) 777-77-77</br>
+            +7(499) 777-77-77<br>
+            +7(499) 777-77-77<br>
             <div class = "reverse">Обратная связь</div>
         </div>
     </div>
@@ -28,14 +37,135 @@
         <a href = "URL" >Прайс-лист</a>
         <a href = "URL" class = "a1">Контакты</a>
     </div>
-    <div id = "slider">
-        
+</div>
+<div id = "slider">
+    <div class = "btns">
+        <button class = "arrow_left" onClick = "sequense_left()">
+        </button>
+        <button class = "arrow_right" onClick = "sequense_right()">
+        </button>
+    </div>
+    <div id = "foto">
+    </div> 
+</div>
+<div id = "content">
+    <div class = "domestic">
+        <a href = "URL">Главная</a> /
+        <a href = "URL">Каталог</a> /
+        <a href = "URL">Бытовая техника</a>
+    </div>
+    <div class = "content1">
+        <div class = "submenu">
+            <ul class = "ul1">
+                <li>
+                    <a>Автомобили</a>
+                    <ul type = "disc" class = "cars">
+                        <li><a>Автозвук</a></li>
+                        <li><a>Автоэлектроника</a></li>
+                        <li><a>Автосвет</a></li>
+                        <li><a>Автоборудование</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Бытовая техника</a>
+                    <ul type = "disc" class = "cars">
+                        <li><a>Микроволновки</a></li>
+                        <li><a>Холодильники</a></li>
+                        <li><a>Посудомоечные машины</a></li>
+                        <li><a>Чайники</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Мобильная техника</a>
+                    <ul type = "disc" class = "cars">
+                        <li><a>Карты памяти</a></li>
+                        <li><a>Моноподы для селфи</a></li>
+                        <li><a>Гарнитуры</a></li>
+                        <li><a>Держатели</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Компьютеры</a>
+                    <ul type = "disc" class = "cars">
+                        <li><a>Мониторы</a></li>
+                        <li><a>Неттопы, моноблоки</a></li>
+                        <li><a>Клавиатуры</a></li>
+                        <li><a>Мыши</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Одежда</a>
+                    <ul type = "disc" class = "cars">
+                        <li><a>Рубажки</a></li>
+                        <li><a>Верхняя одежда</a></li>
+                        <li><a>Юбки и шорты</a></li>
+                        <li><a>Джинсы и брюки</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Недвижимость</a>
+                    <ul type = "disc" class = "cars">
+                        <li><a>Аренда квартир</a></li>
+                        <li><a>Продажа квартир</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class = "left1">
+            <div class = "back_grey">
+                <img src = "img/nophoto.png">
+                <div class = "buy">Самый клевый чайник,<br> который надо купить!</div>
+                <div>
+                    <div class = "many">1 900 р.</div>
+                    <div class = "mini">
+                        <img src = "img/addtobasket_mini.png">
+                    </div>
+                </div>
+            </div>
+            <div class = "back_grey">
+                <img src = "img/nophoto.png">
+                <div class = "buy">Самый клевый чайник,<br> который надо купить!</div>
+                <div>
+                    <div class = "many">1 900 р.</div>
+                    <div class = "mini">
+                        <img src = "img/addtobasket_mini.png">
+                    </div>
+                </div>
+            </div>
+            <div class = "back_grey">
+                <img src = "img/nophoto.png">
+                <div class = "buy">Самый клевый чайник,<br> который надо купить!</div>
+                <div>
+                    <div class = "many">1 900 р.</div>
+                    <div class = "mini">
+                        <img src = "img/addtobasket_mini.png">
+                    </div>
+                </div>
+            </div>
+            <div class = "back_grey">
+                <img src = "img/nophoto.png">
+                <div class = "buy">Самый клевый чайник,<br> который надо купить!</div>
+                <div>
+                    <div class = "many">1 900 р.</div>
+                    <div class = "mini">
+                        <img src = "img/addtobasket_mini.png">
+                    </div>
+                </div>
+            </div>
+            <div class = "back_grey">
+                <img src = "img/nophoto.png">
+                <div class = "buy">Самый клевый чайник,<br> который надо купить!</div>
+                <div>
+                    <div class = "many">1 900 р.</div>
+                    <div class = "mini">
+                        <img src = "img/addtobasket_mini.png">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script>
-
-</script>
 </body>
 </html>
