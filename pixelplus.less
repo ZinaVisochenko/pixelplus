@@ -1,54 +1,71 @@
 body{
+    button{
+        cursor: pointer;
+    }
     margin: 0 auto;
     width: 100%;
     font-family: PT Sans;
     #header{
         background-color: #dcdcdc;
-        .background1{
+        .margin1{
+            width: 1000px;
             margin: 0 auto;
-            width: 980px;
-            height: 230px;
-            padding: 28px 0 28px 0;
-            .company{
-                margin: 38px;
-                margin-left: 0px;
-                float: left;
-            }
-            .com{
-                float: right;
-                font-size: 40px;
-                color: rgb(118, 118, 118);
-                font-family: PT Sans;
-                .reverse{
-                    width: 191px;
-                    color: rgb(118, 118, 118);
-                    border-bottom-style: dashed;
-                    font-weight: 600;
-                    font-size: 24px;
+            padding-left: 10px;
+            padding-right: 10px;
+            .background1{
+                margin: 0 auto;
+                width: 980px;
+                height: 230px;
+                padding: 28px 0 28px 0;
+                //margin-left: 10px;
+                //margin-right: 10px;
+                .company{
+                    margin: 38px;
+                    margin-left: 0px;
+                    float: left;
+                }
+                .com{
                     float: right;
+                    font-size: 40px;
+                    color: rgb(118, 118, 118);
+                    font-family: PT Sans;
+                    .reverse{
+                        background: 0;
+                        border: 0;
+                        color: rgb(118, 118, 118);
+                        border-bottom: 2px dashed rgb(118, 118, 118);
+                        font-weight: 600;
+                        font-size: 24px;
+                        padding: 0;
+                        float: right;
+                    }
                 }
             }
         }
     }
-    #menu{
+    #menu_box{
+        height: 80px;
         background-color: rgb(119, 119, 119);
-        .background2{
-            margin: 0 auto;
-            width: 980px;
-            height: 80px;
-            text-align: center;
-            padding-top: 19px;
-            a{
-                color: rgb(255, 255, 255);
-                font-size: 30px;
-                font-family: PT Sans;
-                border-right: 1px solid rgb(255, 255, 255);
-                //height: 5px;
-                margin-right: 10px;
-                padding-right: 10px;
-            }
-            .a1{
-               border-right: 0; 
+        #menu{
+            background-color: rgb(119, 119, 119);
+            .background2{
+                margin: 0 auto;
+                width: 980px;
+                height: 61px;
+                text-align: center;
+                padding-top: 19px;
+                a{
+                    color: rgb(255, 255, 255);
+                    font-size: 30px;
+                    font-family: PT Sans;
+                    border-right: 1px solid rgb(255, 255, 255);
+                    //height: 5px;
+                    margin-right: 10px;
+                    padding-right: 10px;
+                }
+                .a1{
+                   border-right: 0; 
+                }
             }
         }
     }
@@ -87,7 +104,7 @@ body{
             a{
                 color: rgb(141, 141, 141);
                 font-family: PT Sans;
-                font-size: 15px;
+                font-size: 14px;
                 margin-left: 5px;
                 padding-right: 5px;
             }
@@ -96,19 +113,18 @@ body{
             margin-top: 30px;
             .ul1{
                 color: rgb(141, 141, 141);
-                font-size: 20px;
+                font-size: 16px;
                 list-style: none;
                 padding-left: 0;
                 margin-left: 5px;
-                float: left;
                 a{
                    color: rgb(141, 141, 141); 
                 }
                 .cars{
                    color: rgb(141, 141, 141); 
                     a{
-                       color: rgb(141, 141, 141); 
-                        font-size: 15px;
+                        color: rgb(141, 141, 141); 
+                        font-size: 14px;
                     }
                     a:hover{
                         color: black;
@@ -116,21 +132,31 @@ body{
                 }
             }
             .submenu {
-                width: 185px;
+                width: 180px;
+                display: inline-block;
+                vertical-align: top;
+                .list{
+                    height: 95px;
+                    width: 97px;
+                    background-image: url(img/MS%20-%20EXCEL.png);
+                    font-size: 30px;
+                    color: rgb(68, 68, 68);
+                }
             }
             .left1{
                 width: 795px;
-                //margin-left: 50px;
                 margin-top: 10px;
-                float: left;
+                display: inline-block;
+                vertical-align: top;
                 .back_grey{
                     height: 377px;
-                    width: 250px;
+                    //width: 250px;
                     background-color: rgb(220, 220, 220);
                     padding: 20px;
-                    margin-left: 15px;
+                    margin-left: 12px;
                     margin-bottom: 15px;
-                    float: left;
+                    display: inline-block;
+                    vertical-align: top;
                     .buy{
                         height: 90px;
                         font-size: 18px;
@@ -149,5 +175,119 @@ body{
                 }
             }
         }
+        .content2{
+            border-top: 1px solid rgb(119, 119, 119);
+            padding-top: 10px;
+            margin-top: 50px;
+            .description1{
+                width: 389px;
+                color: rgb(141, 141, 141);
+                float: left;
+            }
+            .description2{
+                width: 386px;
+                color: rgb(141, 141, 141);
+                float: right;
+            }
+        }
+    }
+    #footer{
+        background-color: rgb(119, 119, 119);
+        .background3{
+            height: 219px;
+            width: 980px;
+            color: white;
+            margin: 0 auto;
+            padding-top: 50px;
+            .info1{
+                width: 350px;
+                float: left;
+            }
+            .list1{
+                width: 402px;
+                float: left;
+                li{
+                    line-height: 22px;
+                    list-style: none;
+                    a{
+                        text-decoration: underline;
+                        color: white;
+                    }
+                }
+            }
+            .info2{
+                float: left;
+                a{
+                    color: white;
+                    text-decoration: underline;
+                }
+            }
+        }
+    } 
+}
+#feedback{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    .background4{
+        height: 578px;
+        width: 467px;
+        background-color: white;
+        color: rgb(83, 83, 83);
+        font-weight: bold;
+        padding-top: 10px;
+        margin: 0 auto;
+        margin-top: -289px;
+        position: relative;
+        top: 50%;
+        .reverse{
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;
+        }
+        .name{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .data{
+            text-align: center;
+            margin-top: 20px;
+        }
+        input{
+            height: 40px;
+            width: 340px;
+            margin: 0 auto;
+        }
+        textarea{
+            height: 140px;
+            width: 340px;
+        }
+        .center{
+            width: 100%;
+            .send{
+                height: 42px;
+                width: 128px;
+                background-color: rgb(119, 119, 119);
+                border: 0;
+                font-size: 17px;
+                color: white;
+                font-weight: bold;
+            }
+        }
+         .close{
+            height: 27px;
+            width: 27px;
+            background-color: rgb(119, 119, 119);
+            position: absolute;
+            right: -27px;
+            top: -27px;
+            border: 0;
+            padding: 6px;
+        }
+
     }
 }

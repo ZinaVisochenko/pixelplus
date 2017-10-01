@@ -6,7 +6,6 @@
     <link rel="stylesheet/less" type="text/css" href="pixelplus.less">
     <!--<link rel="stylesheet" type="text/css" href="pixelplus.css">-->
     <script src="less.min.js" type="text/javascript"></script>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <script>
         function sequense_left(){
@@ -20,22 +19,26 @@
 </head> 
 <body>
 <div id = "header">
-    <div class = "background1">
-        <img src = "img/name_company.png" class = "company">
-        <div class = "com">
-            +7(499) 777-77-77<br>
-            +7(499) 777-77-77<br>
-            <div class = "reverse">Обратная связь</div>
+    <div class = "margin1">
+        <div class = "background1">
+            <img src = "img/name_company.png" class = "company">
+            <div class = "com">
+                +7(499) 777-77-77<br>
+                +7(499) 777-77-77<br>
+                <button id = "reverse" class = "reverse">Обратная связь</button>
+            </div>
         </div>
     </div>
 </div>
-<div id = "menu">
-    <div class = "background2">
-        <a href = "URL" >Главная</a>
-        <a href = "URL" >Каталог</a>
-        <a href = "URL" >Доставка и оплата</a>
-        <a href = "URL" >Прайс-лист</a>
-        <a href = "URL" class = "a1">Контакты</a>
+<div id = "menu_box">
+    <div id = "menu">
+        <div class = "background2">
+            <a href = "#">Главная</a>
+            <a href = "#">Каталог</a>
+            <a href = "#">Доставка и оплата</a>
+            <a href = "#">Прайс-лист</a>
+            <a href = "#" class = "a1">Контакты</a>
+        </div>
     </div>
 </div>
 <div id = "slider">
@@ -50,122 +53,223 @@
 </div>
 <div id = "content">
     <div class = "domestic">
-        <a href = "URL">Главная</a> /
-        <a href = "URL">Каталог</a> /
-        <a href = "URL">Бытовая техника</a>
+        <a href = "#">Главная</a> /
+        <a href = "#">Каталог</a> /
+        <a href = "#">Бытовая техника</a>
     </div>
     <div class = "content1">
         <div class = "submenu">
-            <ul class = "ul1">
-                <li>
-                    <a>Автомобили</a>
-                    <ul type = "disc" class = "cars">
-                        <li><a>Автозвук</a></li>
-                        <li><a>Автоэлектроника</a></li>
-                        <li><a>Автосвет</a></li>
-                        <li><a>Автоборудование</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a>Бытовая техника</a>
-                    <ul type = "disc" class = "cars">
-                        <li><a>Микроволновки</a></li>
-                        <li><a>Холодильники</a></li>
-                        <li><a>Посудомоечные машины</a></li>
-                        <li><a>Чайники</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a>Мобильная техника</a>
-                    <ul type = "disc" class = "cars">
-                        <li><a>Карты памяти</a></li>
-                        <li><a>Моноподы для селфи</a></li>
-                        <li><a>Гарнитуры</a></li>
-                        <li><a>Держатели</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a>Компьютеры</a>
-                    <ul type = "disc" class = "cars">
-                        <li><a>Мониторы</a></li>
-                        <li><a>Неттопы, моноблоки</a></li>
-                        <li><a>Клавиатуры</a></li>
-                        <li><a>Мыши</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a>Одежда</a>
-                    <ul type = "disc" class = "cars">
-                        <li><a>Рубажки</a></li>
-                        <li><a>Верхняя одежда</a></li>
-                        <li><a>Юбки и шорты</a></li>
-                        <li><a>Джинсы и брюки</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a>Недвижимость</a>
-                    <ul type = "disc" class = "cars">
-                        <li><a>Аренда квартир</a></li>
-                        <li><a>Продажа квартир</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div>
+                <ul class = "ul1">
+                    <li>
+                        <a>Автомобили</a>
+                        <ul type = "disc" class = "cars">
+                            <li><a href = "#">Автозвук</a></li>
+                            <li><a href = "#">Автоэлектроника</a></li>
+                            <li><a href = "#">Автосвет</a></li>
+                            <li><a href = "#">Автоборудование</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Бытовая техника</a>
+                        <ul type = "disc" class = "cars">
+                            <li><a href = "#">Микроволновки</a></li>
+                            <li><a href = "#">Холодильники</a></li>
+                            <li><a href = "#">Посудомоечные машины</a></li>
+                            <li><a href = "#">Чайники</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Мобильная техника</a>
+                        <ul type = "disc" class = "cars">
+                            <li><a href = "#">Карты памяти</a></li>
+                            <li><a href = "#">Моноподы для селфи</a></li>
+                            <li><a href = "#">Гарнитуры</a></li>
+                            <li><a href = "#">Держатели</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Компьютеры</a>
+                        <ul type = "disc" class = "cars">
+                            <li><a href = "#">Мониторы</a></li>
+                            <li><a href = "#">Неттопы, моноблоки</a></li>
+                            <li><a href = "#">Клавиатуры</a></li>
+                            <li><a href = "#">Мыши</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Одежда</a>
+                        <ul type = "disc" class = "cars">
+                            <li><a href = "#">Рубажки</a></li>
+                            <li><a href = "#">Верхняя одежда</a></li>
+                            <li><a href = "#">Юбки и шорты</a></li>
+                            <li><a href = "#">Джинсы и брюки</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Недвижимость</a>
+                        <ul type = "disc" class = "cars">
+                            <li><a href = "#">Аренда квартир</a></li>
+                            <li><a href = "#">Продажа квартир</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class = "list">
+                Прайс-лист
+            </div>
         </div>
         <div class = "left1">
-            <div class = "back_grey">
-                <img src = "img/nophoto.png">
-                <div class = "buy">Самый клевый чайник,<br> который надо купить!</div>
-                <div>
-                    <div class = "many">1 900 р.</div>
-                    <div class = "mini">
-                        <img src = "img/addtobasket_mini.png">
+            <div>
+                <div class = "back_grey">
+                    <img src = "img/nophoto.png">
+                    <div class = "buy">Самый клевый чайник,<br> который надо купить!</div>
+                    <div>
+                        <div class = "many">1 900 р.</div>
+                        <div class = "mini">
+                            <img src = "img/addtobasket_mini.png">
+                        </div>
+                    </div>
+                </div>
+                <div class = "back_grey">
+                    <img src = "img/nophoto.png">
+                    <div class = "buy">Самый клевый чайник,<br> который надо купить!</div>
+                    <div>
+                        <div class = "many">1 900 р.</div>
+                        <div class = "mini">
+                            <img src = "img/addtobasket_mini.png">
+                        </div>
+                    </div>
+                </div>
+                <div class = "back_grey">
+                    <img src = "img/nophoto.png">
+                    <div class = "buy">Самый клевый чайник,<br> который надо купить!</div>
+                    <div>
+                        <div class = "many">1 900 р.</div>
+                        <div class = "mini">
+                            <img src = "img/addtobasket_mini.png">
+                        </div>
+                    </div>
+                </div>
+                <div class = "back_grey">
+                    <img src = "img/nophoto.png">
+                    <div class = "buy">Самый клевый чайник,<br> который надо купить!</div>
+                    <div>
+                        <div class = "many">1 900 р.</div>
+                        <div class = "mini">
+                            <img src = "img/addtobasket_mini.png">
+                        </div>
+                    </div>
+                </div>
+                <div class = "back_grey">
+                    <img src = "img/nophoto.png">
+                    <div class = "buy">Самый клевый чайник,<br> который надо купить!</div>
+                    <div>
+                        <div class = "many">1 900 р.</div>
+                        <div class = "mini">
+                            <img src = "img/addtobasket_mini.png">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class = "back_grey">
-                <img src = "img/nophoto.png">
-                <div class = "buy">Самый клевый чайник,<br> который надо купить!</div>
-                <div>
-                    <div class = "many">1 900 р.</div>
-                    <div class = "mini">
-                        <img src = "img/addtobasket_mini.png">
-                    </div>
+            <div class = "content2">
+                <div class = "description1">
+                    Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души. 
                 </div>
-            </div>
-            <div class = "back_grey">
-                <img src = "img/nophoto.png">
-                <div class = "buy">Самый клевый чайник,<br> который надо купить!</div>
-                <div>
-                    <div class = "many">1 900 р.</div>
-                    <div class = "mini">
-                        <img src = "img/addtobasket_mini.png">
-                    </div>
-                </div>
-            </div>
-            <div class = "back_grey">
-                <img src = "img/nophoto.png">
-                <div class = "buy">Самый клевый чайник,<br> который надо купить!</div>
-                <div>
-                    <div class = "many">1 900 р.</div>
-                    <div class = "mini">
-                        <img src = "img/addtobasket_mini.png">
-                    </div>
-                </div>
-            </div>
-            <div class = "back_grey">
-                <img src = "img/nophoto.png">
-                <div class = "buy">Самый клевый чайник,<br> который надо купить!</div>
-                <div>
-                    <div class = "many">1 900 р.</div>
-                    <div class = "mini">
-                        <img src = "img/addtobasket_mini.png">
-                    </div>
+                <div class = "description2">
+                    Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.
                 </div>
             </div>
         </div>
+  
+    </div>
+    
+</div>
+<div id = "footer">
+    <div class = "background3">
+        <div class = "info1">
+            © 2012–2013 ЗАО «Компания»<br> info@name.ru
+        </div>
+        <div class = "list1">
+            <ul>
+                <li><a href = "#">Главная</a></li>
+                <li><a href = "#">Каталог</a></li>
+                <li><a href = "#">Доставка и оплата</a></li>
+                <li><a href = "#">Прайс-лист</a></li>
+                <li><a href = "#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class = "info2">
+            <img src = "img/company.png">
+            <a href = "#">Разработка сайта</a> — <br>компания «Пиксель Плюс»
+        </div>
+    </div>
+</div> 
+<div id = "feedback">
+    <div class = "background4">
+        <div class = "reverse">ОБРАТНАЯ СВЯЗЬ</div>
+        <div class = "name">
+            <div>Ваше имя *</div>
+            <input type = "text">
+        </div>
+        <div class = "data">
+            <div>Телефон *</div>
+            <input type = "text">
+        </div>
+        <div class = "data">
+            <div>Email *</div>
+            <input type="email" name="email">
+        </div>
+        <div class = "data">
+            <div class = "">Сообщение</div>
+            <textarea></textarea>
+        </div>
+        <div class = "center data">
+            <button class = "send">ОТПРАВИТЬ</button>
+        </div>
+        <button id = "close" class = "close"><img src = "img/Shape.png"></button>
     </div>
 </div>
-<script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function(){     
+            $('#close').click(function(){ 
+                $('#feedback').hide();
+            });
+            $('#reverse').click(function(){ 
+                $('#feedback').show();
+            });
+            
+            
+            $(function() {
+                // Stick the #menu to the top of the window
+                var menu = $('#menu');
+                var menuHomeY = menu.offset().top;
+                var isFixed = false;
+                var $w = $(window);
+                $w.scroll(function() {
+                    var scrollTop = $w.scrollTop();
+                    var shouldBeFixed = scrollTop > menuHomeY;
+                    if (shouldBeFixed && !isFixed) {
+                        menu.css({
+                            position: 'fixed',
+                            top: 0,
+                            left: menu.offset().left,
+                            width: menu.width()
+                        });
+                        isFixed = true;
+                    }
+                    else if (!shouldBeFixed && isFixed)
+                    {
+                        menu.css({
+                            position: 'static'
+                        });
+                        isFixed = false;
+                    }
+                });
+            });
+            
+        });
+    </script>
 </body>
 </html>
