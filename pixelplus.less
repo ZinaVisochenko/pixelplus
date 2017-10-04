@@ -2,16 +2,23 @@ body{
     button{
         cursor: pointer;
     }
+    
+    /* latin */
+    @font-face {
+      font-family: 'Open Sans Condensed';
+      font-style: normal;
+      font-weight: 300;
+      src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url(https://fonts.gstatic.com/s/opensanscondensed/v11/gk5FxslNkTTHtojXrkp-xBEur64QvLD-0IbiAdTUNXE.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    }
+    
     margin: 0 auto;
     width: 100%;
+    min-width: 1000px;
     font-family: PT Sans;
     #header{
         background-color: #dcdcdc;
-        .margin1{
-            width: 1000px;
-            margin: 0 auto;
-            padding-left: 10px;
-            padding-right: 10px;
+       
             .background1{
                 margin: 0 auto;
                 width: 980px;
@@ -20,6 +27,8 @@ body{
                 //margin-left: 10px;
                 //margin-right: 10px;
                 .company{
+                    height: 100px;
+                    width: 273px;
                     margin: 38px;
                     margin-left: 0px;
                     float: left;
@@ -28,7 +37,7 @@ body{
                     float: right;
                     font-size: 40px;
                     color: rgb(118, 118, 118);
-                    font-family: PT Sans;
+                    font-family: 'Open Sans Condensed';
                     .reverse{
                         background: 0;
                         border: 0;
@@ -41,39 +50,48 @@ body{
                     }
                 }
             }
-        }
+        
     }
     #menu_box{
         height: 80px;
         background-color: rgb(119, 119, 119);
         #menu{
             background-color: rgb(119, 119, 119);
+            width: 100%;
+            min-width: 1000px;
             .background2{
                 margin: 0 auto;
                 width: 980px;
                 height: 61px;
                 text-align: center;
-                padding-top: 19px;
+                padding-top: 12px;
+                li{
+                    list-style: none;
+                    float: left;
+                    border-right: 2px solid rgb(255, 255, 255);
+                    height: 25px;
+                }
+                .li_no_bor{
+                    border-right: 0;
+                }
                 a{
                     color: rgb(255, 255, 255);
                     font-size: 30px;
                     font-family: PT Sans;
-                    border-right: 1px solid rgb(255, 255, 255);
-                    //height: 5px;
-                    margin-right: 10px;
-                    padding-right: 10px;
+                    top: -9px;
+                    position: relative;
+                    margin-right: 14px;
+                    margin-left: 14px;
+                    text-decoration: none;
                 }
-                .a1{
-                   border-right: 0; 
+                a:hover{
+                    text-decoration: underline;
                 }
             }
         }
     }
     #slider{
         height: 400px;
-        background-image: url(img/slide1.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
         .btns{
             width: 980px;
             margin: 0 auto;
@@ -93,6 +111,26 @@ body{
                 margin-top: 160px;
                 float: right;
             }
+        }
+        #old_img{
+            width: 100%;
+            min-width: 1000px;
+            height: 400px;
+            position: absolute;
+            z-index: -10;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(img/slide1.jpg);
+        }
+        #new_img{
+            width: 100%;
+            min-width: 1000px;
+            height: 400px;
+            position: absolute;
+            z-index: -5;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(img/slide1.jpg);
         }
     }
     #content{
@@ -131,19 +169,19 @@ body{
                     }
                 }
             }
-            .submenu {
+            .leftblock {
                 width: 180px;
                 display: inline-block;
                 vertical-align: top;
                 .list{
-                    height: 95px;
-                    width: 97px;
-                    background-image: url(img/MS%20-%20EXCEL.png);
+                    width:  100%;
+                    text-align: center;
                     font-size: 30px;
                     color: rgb(68, 68, 68);
+                    margin-top: 100px;
                 }
             }
-            .left1{
+            .centerblock{
                 width: 795px;
                 margin-top: 10px;
                 display: inline-block;
@@ -173,23 +211,40 @@ body{
                         float: right;
                     }
                 }
+                .content_nav{
+                    text-align: center;
+                    margin-top: 16px;
+                    a {
+                        color: darkgray;
+                        text-decoration: none;
+                        margin-left: 7px;
+                        margin-right: 7px;
+                    }
+                    .selected {
+                        color: black;
+                        font-size: 19px;
+                    }
+                }
+                .content2{
+                    border-top: 1px solid rgb(119, 119, 119);
+                    padding-top: 10px;
+                    margin-top: 76px;
+                    overflow: auto;
+                    margin-bottom: 200px;
+                    .description1{
+                        width: 389px;
+                        color: rgb(141, 141, 141);
+                        float: left;
+                    }
+                    .description2{
+                        width: 386px;
+                        color: rgb(141, 141, 141);
+                        float: right;
+                    }
+                }
             }
         }
-        .content2{
-            border-top: 1px solid rgb(119, 119, 119);
-            padding-top: 10px;
-            margin-top: 50px;
-            .description1{
-                width: 389px;
-                color: rgb(141, 141, 141);
-                float: left;
-            }
-            .description2{
-                width: 386px;
-                color: rgb(141, 141, 141);
-                float: right;
-            }
-        }
+        
     }
     #footer{
         background-color: rgb(119, 119, 119);
@@ -204,22 +259,34 @@ body{
                 float: left;
             }
             .list1{
-                width: 402px;
+                width: 398px;
                 float: left;
-                li{
-                    line-height: 22px;
-                    list-style: none;
-                    a{
-                        text-decoration: underline;
-                        color: white;
+                ul {
+                    margin-top: 0px;
+                    li{
+                        margin-bottom: 7px;
+                        line-height: 22px;
+                        list-style: none;
+                        a{
+                            text-decoration: underline;
+                            color: white;
+                        }
                     }
                 }
             }
             .info2{
                 float: left;
-                a{
-                    color: white;
-                    text-decoration: underline;
+                .left{
+                    float: left;
+                    margin-top: 7px;
+                }
+                .right{
+                    float: left;
+                    margin-left: 9px;
+                    a{
+                        color: white;
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -259,16 +326,23 @@ body{
         }
         input{
             height: 40px;
-            width: 340px;
+            width: 320px;
             margin: 0 auto;
+            font-size: 16px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 1px solid #b1b1b1;
+            color: #b1b1b1;
         }
         textarea{
             height: 140px;
             width: 340px;
+            border: 1px solid #b1b1b1;
+            font-size: 16px;
         }
         .center{
             width: 100%;
-            .send{
+            #send_feedback{
                 height: 42px;
                 width: 128px;
                 background-color: rgb(119, 119, 119);
