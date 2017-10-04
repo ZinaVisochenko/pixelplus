@@ -3,8 +3,8 @@
 <head> 
     <meta charset="UTF-8"> 
     <title>Pixel</title>
-    <link rel="stylesheet/less" type="text/css" href="pixelplus.less">
-    <!--<link rel="stylesheet" type="text/css" href="pixelplus.css">-->
+    <!--<link rel="stylesheet/less" type="text/css" href="pixelplus.less">-->
+    <link rel="stylesheet" type="text/css" href="pixelplus.css">
     <script src="less.min.js" type="text/javascript"></script>
     <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head> 
@@ -215,7 +215,7 @@
     </div>
 </div> 
 <div id = "feedback">
-    <div class = "background4">
+    <form class = "background4">
         <div class = "reverse">ОБРАТНАЯ СВЯЗЬ</div>
         <div class = "name">
             <div>Ваше имя *</div>
@@ -234,10 +234,10 @@
             <textarea></textarea>
         </div>
         <div class = "center data">
-            <button id = "send_feedback">ОТПРАВИТЬ</button>
+            <input type = "submit" id = "send_feedback" value = "ОТПРАВИТЬ">
         </div>
         <button id = "close" class = "close"><img src = "img/Shape.png"></button>
-    </div>
+    </form>
 </div>
     
     
@@ -296,8 +296,10 @@
             /* FEEDBACK CHECK */
             $('#send_feedback').click(function(){
                 if (feedback_validate()) {
-                    $('#feedback').hide(100);
+                    //$('#feedback').hide(100);
+                    return true;
                 }
+                return false;
             });
             
             function feedback_validate() {
